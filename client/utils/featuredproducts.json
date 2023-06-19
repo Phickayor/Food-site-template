@@ -1,0 +1,20 @@
+[
+    {
+        "name":"food1",
+        "label":"Deserts",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid inventore minus quam fuga sed nisi, nemo sint, enim ",
+    "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+    },
+    {
+        "name":"food2",
+        "label":"Grillss",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid inventore minus quam fuga sed nisi, nemo sint, enim ",
+        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+    },
+    {
+        "name":"food3",
+        "label":"Deserts",
+        "content":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid inventore minus quam fuga sed nisi, nemo sint, enim ",
+        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+    }
+]

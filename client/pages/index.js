@@ -3,6 +3,7 @@ import { Poppins } from 'next/font/google'
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import About from '@/components/About'
+import FeaturedProduct from '@/components/FeaturedProduct'
 
 const poppins = Poppins({ subsets: ['latin'], weight: '300' })
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Hero />
       <About />
+      <FeaturedProduct />
     </div>
   )
 }
