@@ -42,7 +42,7 @@ function Menu() {
                                 </div>
                             </SwiperSlide>
                         ))}
-                        <h1 className='my-1 opacity-0'>...</h1>
+                        <h1 className='opacity-0'>...</h1>
                     </Swiper>
                 </div>
             </div>
