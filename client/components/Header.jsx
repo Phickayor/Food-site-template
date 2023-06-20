@@ -9,7 +9,7 @@ function Header() {
     const close = <FontAwesomeIcon icon={faClose} className='cursor-pointer text-extralight' />
     const [menuBtn, setmenuBtn] = useState(bars)
     return (
-        <div className='fixed backdrop-blur-md bg-gradient-to-r from-[#651549]  via-bordercolor  to-[#961b0d] w-full top-0 font-semibold px-4 lg:px-10 py-3 text-white'>
+        <div className='fixed z-10 backdrop-blur-md bg-gradient-to-r from-[#651549]  via-bordercolor  to-[#961b0d] w-full top-0 font-semibold px-4 lg:px-10 py-3 text-white'>
             <div className="lg:flex hidden justify-between px-4 lg:px-5">
                 <div className='inline-flex font-bold text-xl items-center '>
                     {/* {logo} */}
