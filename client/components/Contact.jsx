@@ -23,8 +23,7 @@ function Contact() {
     const [load, setLoad] = useState()
     return (
         <div className='bg-gradient-to-r from-[#651549]  via-bordercolor  to-[#961b0d] py-10 text-white'>
-            <div className='mx-auto w-11/12 flex gap-10 '>
-
+            <div className='mx-auto w-11/12 lg:flex gap-10 '>
                 <div className="px-5 lg:px-10 lg:w-1/2"
                     data-aos="fade-right"
                     data-aos-duration="1000"
@@ -35,7 +34,7 @@ function Contact() {
                         <p className="text-textcolor text-xl">
                             Fill up the form and get a response from our team within 24 hours
                         </p>
-                        <ul className="my-10 space-y-5 text-xl">
+                        <ul className="lg:my-10 my-5 space-y-5 text-xl">
                             <li className="flex">{phone} &nbsp; +123-456-7890</li>
                             <li className="flex">{mail} &nbsp; johndoe@gmail.com</li>
                             <li className="flex ">{location} &nbsp; 3, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur, 104102, Lagos</li>

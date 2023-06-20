@@ -11,8 +11,8 @@ function Footer() {
         <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
     );
     return (
-        <div className='mx-auto grid grid-cols-4 place-content-center bg-slate-200 py-5 lg:px-10'>
-            <div className='col-span-2 space-y-2 self-center'>
+        <div className='mx-auto grid lg:grid-cols-4 grid-cols-2 place-content-center bg-slate-200 py-5 lg:px-10'>
+            <div className='col-span-2 py-5 lg:py-0 space-y-2 self-center order-3 lg:order-1'>
                 <div className="flex space-x-2 mx-4 self-center items-center border-2" >
                     <img src="/logo.png" className="h-16 lg:w-fit" />
                     <h1 className="text-3xl font-bold self-center">Abula.com</h1>
@@ -26,7 +26,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className='lg:order-2 order-1'>
                 <h1 className='text-center text-xl font-semibold'>Sitemap</h1>
                 <ul className='flex flex-col space-y-3 my-4 text-center'>
                     <li className="cursor-pointer hover:scale-110 hover:text-bordercolor">Home</li>
@@ -37,7 +37,7 @@ function Footer() {
                     <li className="cursor-pointer hover:scale-110 hover:text-bordercolor">FAQ's</li>
                 </ul>
             </div>
-            <div>
+            <div className='lg:order-3 order-2'>
                 <h1 className='text-center text-xl font-semibold'>Support</h1>
                 <ul className='flex flex-col space-y-3 my-4 text-center'>
                     <li className="cursor-pointer hover:scale-110 hover:text-bordercolor">Privacy Policy</li>

@@ -12,6 +12,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 function FeaturedProduct() {
     const cart = <FontAwesomeIcon icon={faCartShopping} />
+    const [slides, setSlides] = useState()
+    function AdjustSlides() {
+        window.innerWidth > 1024 ? setSlides(2) : setSlides(1)
+    }
+
+    useEffect(() => {
+        AdjustSlides();
+        const handleResize = () => {
+            AdjustSlides();
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    })
     return (
         <div className='py-5 '>
             <div>
@@ -23,12 +40,12 @@ function FeaturedProduct() {
                         // install Swiper modules
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={50}
-                        slidesPerView={2}
+                        slidesPerView={slides} //2 for Desktop
                         navigation
                         pagination={{ clickable: true }}
                         onSwiper={swiper => console.log(swiper)}
                         onSlideChange={() => console.log('slide change')}
-                        className='my-10 w-11/12 '
+                        className='my-10 lg:w-11/12 '
                     >
                         {FeaturedProducts.map((food, index) => (
                             <SwiperSlide key={index} className='bg-black rounded-2xl'>
@@ -37,7 +54,7 @@ function FeaturedProduct() {
                                     src={food.image}
                                     alt={food.name}
                                 />
-                                <div className=' h-96 flex flex-col justify-center mx-20  text-white space-y-5'>
+                                <div className=' h-96 flex flex-col justify-center lg:mx-20 mx-5  text-white space-y-5'>
                                     <div className='space-y-2'>
                                         <label className='inline-block text-sm w-fit px-2 border-l-4 bg-slate-200 border-bordercolor text-black'>{food.label}</label>
                                         <h1 className='text-5xl font-semibold text-bordercolor'>{food.name}</h1>
