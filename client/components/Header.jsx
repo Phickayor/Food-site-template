@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React, { useState } from 'react'
 function Header() {
-    // const logo = <img src='/logo.png' className='self-start scale-50' />
+    const logo = <img src='/logo.png' className='self-start h-16' />
     const bars = <FontAwesomeIcon icon={faBars} className='cursor-pointer text-extralight' />
     const close = <FontAwesomeIcon icon={faClose} className='cursor-pointer text-extralight' />
     const [menuBtn, setmenuBtn] = useState(bars)
@@ -12,7 +12,7 @@ function Header() {
         <div className='fixed z-10 backdrop-blur-md bg-gradient-to-r from-[#651549]  via-bordercolor  to-[#961b0d] w-full top-0 font-semibold px-4 lg:px-10 py-3 text-white'>
             <div className="lg:flex hidden justify-between px-4 lg:px-5">
                 <div className='inline-flex font-bold text-xl items-center '>
-                    {/* {logo} */}
+                    {logo}
                     Abula.com
                 </div>
                 <ul className='flex space-x-5 self-center text-md font-semibold'>

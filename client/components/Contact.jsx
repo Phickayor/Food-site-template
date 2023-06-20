@@ -41,9 +41,9 @@ function Contact() {
                             <li className="flex ">{location} &nbsp; 3, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur, 104102, Lagos</li>
                         </ul>
                         <div className="flex space-x-6">
-                            <a className="hover:scale-110" href="https://www.instagram.com/trippayer/">{instagram}</a>
-                            <a className="hover:scale-110" href="https://www.linkedin.com/in/trippayer-812955276/">{linkedin}</a>
-                            <a className="hover:scale-110" href="https://www.twitter.com/trippayer">{twitter}</a>
+                            <a className="hover:scale-110">{instagram}</a>
+                            <a className="hover:scale-110" >{linkedin}</a>
+                            <a className="hover:scale-110">{twitter}</a>
                         </div>
                     </div>
 

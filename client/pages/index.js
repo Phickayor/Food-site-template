@@ -6,6 +6,7 @@ import About from '@/components/About'
 import FeaturedProduct from '@/components/FeaturedProduct'
 import Menu from '@/components/Menu'
 import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 const poppins = Poppins({ subsets: ['latin'], weight: '300' })
 
@@ -20,6 +21,7 @@ export default function Home() {
         <Menu />
       </div>
       <Contact />
+      <Footer />
     </div>
   )
 }
