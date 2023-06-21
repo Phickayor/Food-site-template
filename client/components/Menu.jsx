@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -10,15 +10,15 @@ import 'swiper/css/scrollbar'
 import menuItems from '../utils/menu.json'
 import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 function Menu() {
     const right = <FontAwesomeIcon icon={faAngleRight} />
-    const [slides, setSlides] = useState()
+    const [slides, setSlides] = useState(null)
     function AdjustSlides() {
         window.innerWidth > 1024 ? setSlides(5) : setSlides(2)
     }
-
     useEffect(() => {
-        AdjustSlides();
+        AdjustSlides()
         const handleResize = () => {
             AdjustSlides();
         };
@@ -37,23 +37,22 @@ function Menu() {
             <div className='my-10 mx-auto lg:w-11/12 shadow-2xl shadow-black rounded-b-2xl'>
                 <div className='bg-bordercolor text-white flex justify-between p-4'>
                     <h1 className='font-semibold text-xl'>Our Menu</h1>
-                    <h3 className='hover:underline font-medium cursor-pointer'>See All &nbsp;{right}</h3>
+                    <Link href='/menu' className='hover:underline font-medium cursor-pointer'>See All &nbsp;{right}</Link>
                 </div>
                 <div className='mx-auto w-11/12 py-4'>
                     <Swiper
                         // install Swiper modules
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={20}
-                        slidesPerView={slides} //5 for desktop 
+                        slidesPerView={slides} //2 for Desktop
                         navigation
-                        pagination
+                        pagination={{ clickable: true }}
                         onSwiper={swiper => console.log(swiper)}
                         onSlideChange={() => console.log('slide change')}
-                        className='px-4'
                     >
                         {menuItems.map((item, index) => (
-                            <SwiperSlide className='hover:shadow-2xl cursor-pointer my-4  self-center rounded-3xl' key={index}>
-                                <img src={item.image} alt={item.name} className='hover:scale-110 mx-auto w-11/12 rounded-2xl' />
+                            <SwiperSlide className='hover:shadow-2xl cursor-pointer my-4 hover:scale-110 self-center rounded-3xl' key={index}>
+                                <img src={item.image} alt={item.name} className=' mx-auto w-11/12 rounded-2xl' />
                                 <div className='mx-5 space-y-1 my-2'>
                                     <h1 className='text-lg'>{item.name}</h1>
                                     <h2 className='font-semibold'>{item.price}</h2>

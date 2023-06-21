@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 function FeaturedProduct() {
     const cart = <FontAwesomeIcon icon={faCartShopping} />
-    const [slides, setSlides] = useState()
+    const [slides, setSlides] = useState(null)
     function AdjustSlides() {
         window.innerWidth > 1024 ? setSlides(2) : setSlides(1)
     }
