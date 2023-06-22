@@ -9,7 +9,7 @@ function About() {
             <div className='gap-10 flex justify-around'>
                 <div className='w-full'>
                     <p className='inline px-2 py-1 border-l-4 bg-slate-200 border-bordercolor'>About Us</p>
-                    <h1 className='text-3xl md:text-4xl font-rubik my-4 font-semibold'>Get to <b className='text-bordercolor'>know us</b> better</h1>
+                    <h1 className='text-3xl md:text-4xl my-4 font-semibold'>Get to <b className='text-bordercolor'>know us</b> better</h1>
                     <p className='font-krub text-lg lg:text-xl md:py-5'>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex aliquid inventore minus quam fuga sed nisi, nemo sint, enim aliquam pariatur doloremque eos eum provident modi repudiandae culpa minima voluptatem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus, iure, architecto deserunt veniam corrupti laborum laudantium quo vel dolorum numquam saepe, repudiandae totam! Veniam autem, distinctio a quis facilis expedita.
                     </p>

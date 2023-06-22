@@ -1,6 +1,7 @@
 import AboutBanner from '@/components/AboutBanner'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
+import OurStory from '@/components/OurStory'
 import { Poppins } from 'next/font/google'
 import React from 'react'
 const poppins = Poppins({ subsets: ["latin"], weight: ["300"] })
@@ -9,6 +10,9 @@ function AboutUs() {
         <div className={poppins.className}>
             <Header />
             <AboutBanner />
+            <div className='mx-auto w-11/12'>
+                <OurStory />
+            </div>
             <Footer />
         </div>
     )
