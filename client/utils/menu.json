@@ -3,48 +3,48 @@
         "name":"Chicken And Chips",
         "label":"Appetizers",
         "price":"₦ 2500",
-    "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+    "image":"/test.jpeg"
     },
     {
         "name":"Jollof rice",
         "label":"Main Course",
         "price":"₦ 2500",
-        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+        "image":"/test.jpeg"
     },
     {
         "name":"Abula and Egusi Soup",
         "label":"Main Course",
         "price":"₦ 2500",
-        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+        "image":"/test.jpeg"
     },
     {
         "name":"Small Chops",
         "label":"Appetizers",
         "price":"₦ 2500",
-        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+        "image":"/test.jpeg"
     },
     {
         "name":"Sharwama",
         "label":"Grills",
         "price":"₦ 2500",
-    "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+    "image":"/test.jpeg"
     },
     {
         "name":"Fried rice",
         "label":"Main Course",
         "price":"₦ 2500",
-        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+        "image":"/test.jpeg"
     },
     {
         "name":"Peppered Fish",
         "label":"Grills",
         "price":"₦ 2500",
-        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+        "image":"/test.jpeg"
     },
     {
         "name":"Spaghetti",
         "label":"Main Course",
         "price":"₦ 2500",
-        "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+        "image":"/test.jpeg"
     }
 ]

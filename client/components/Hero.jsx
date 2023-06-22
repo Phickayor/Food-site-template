@@ -13,7 +13,7 @@ function Hero() {
             </div>
             <div className='hidden md:block w-1/2 self-center'>
                 <img
-                    src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
+                    src="/test.jpeg"
                     className='rounded-full' />
             </div>
         </div>
