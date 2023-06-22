@@ -1,49 +1,49 @@
 [
     {
         "name":"Chicken And Chips",
-        "label":"Deserts",
+        "label":"Appetizers",
         "price":"₦ 2500",
     "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     },
     {
-        "name":"Jollof rice and Chicken",
-        "label":"Grillss",
+        "name":"Jollof rice",
+        "label":"Main Course",
         "price":"₦ 2500",
         "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     },
     {
         "name":"Abula and Egusi Soup",
-        "label":"Deserts",
+        "label":"Main Course",
         "price":"₦ 2500",
         "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     },
     {
         "name":"Small Chops",
-        "label":"Deserts",
+        "label":"Appetizers",
         "price":"₦ 2500",
         "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     },
     {
-        "name":"Chicken And Chips",
-        "label":"Deserts",
+        "name":"Sharwama",
+        "label":"Grills",
         "price":"₦ 2500",
     "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     },
     {
-        "name":"Jollof rice and Chicken",
-        "label":"Grillss",
+        "name":"Fried rice",
+        "label":"Main Course",
         "price":"₦ 2500",
         "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     },
     {
-        "name":"Abula and Egusi Soup",
-        "label":"Deserts",
+        "name":"Peppered Fish",
+        "label":"Grills",
         "price":"₦ 2500",
         "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     },
     {
-        "name":"Small Chops",
-        "label":"Deserts",
+        "name":"Spaghetti",
+        "label":"Main Course",
         "price":"₦ 2500",
         "image":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=3000"
     }

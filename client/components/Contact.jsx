@@ -13,12 +13,12 @@ function Contact() {
     const location = <FontAwesomeIcon icon={faMapMarker} />;
     const spin = <FontAwesomeIcon icon={faSpinner} className="fa-spin" />
     const instagram = (
-        <FontAwesomeIcon icon={faInstagram} className="font-semibold text-4xl" />
+        <FontAwesomeIcon icon={faInstagram} className="font-semibold text-3xl lg:text-4xl" />
     ); const linkedin = (
-        <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-4xl" />
+        <FontAwesomeIcon icon={faLinkedinIn} className="font-semibold text-3xl lg:text-4xl" />
     );
     const twitter = (
-        <FontAwesomeIcon icon={faTwitter} className="font-semibold text-4xl" />
+        <FontAwesomeIcon icon={faTwitter} className="font-semibold text-3xl lg:text-4xl" />
     );
     const [load, setLoad] = useState()
     return (
@@ -31,10 +31,10 @@ function Contact() {
                     <div className="mx-auto lg:w-10/12 my-10 h-full">
                         <p className='inline px-2 py-1 border-l-4 bg-slate-500 border-bordercolor'>Talk to us</p>
                         <h1 className="font-bold text-darkblue lg:text-4xl text-2xl my-4">Contact Us</h1>
-                        <p className="text-textcolor text-xl">
+                        <p className="text-textcolor text-lg lg:text-xl">
                             Fill up the form and get a response from our team within 24 hours
                         </p>
-                        <ul className="lg:my-10 my-5 space-y-5 text-xl">
+                        <ul className="lg:my-10 my-5 space-y-5 text-lg lg:text-xl">
                             <li className="flex">{phone} &nbsp; +123-456-7890</li>
                             <li className="flex">{mail} &nbsp; johndoe@gmail.com</li>
                             <li className="flex ">{location} &nbsp; 3, Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur, 104102, Lagos</li>
