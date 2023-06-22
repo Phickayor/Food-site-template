@@ -31,7 +31,7 @@ function Header() {
                     <Link href='/contact' className='hover:border-b-4 border-[#651549] duration-100'><li>Contact Us</li></Link>
                     <Link href="/faq" className='hover:border-b-4 border-[#651549] duration-100'><li>FAQ's</li></Link>
                 </ul>
-                <a href='#contact' className='self-center'>
+                <a href='/order-online' className='self-center'>
                     <button className='font-semibold hover:bg-[#121212] duration-300 self-center bg-bordercolor hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>{shop} Order Online</button>
                 </a>
             </div>
@@ -53,9 +53,9 @@ function Header() {
                     <Link href='/contact' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{contact} &nbsp; Contact Us</li></Link>
                     <Link href="/faq" onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{faq} &nbsp; FAQ's</li></Link>
                 </ul>
-                <div className='flex flex-col mt-20'>
+                <Link href='/order-online' className='flex flex-col mt-20'>
                     <button className='font-semibold hover:bg-[#121212] duration-300 mx-auto bg-bordercolor hover:scale-105 px-5 py-3  rounded-lg text-white'>{shop} Order Online</button>
-                </div>
+                </Link>
             </div>
         </div>
     )

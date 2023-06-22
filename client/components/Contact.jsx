@@ -7,7 +7,7 @@ import {
     faSpinner,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-function Contact() {
+function ContactForm() {
     const phone = <FontAwesomeIcon icon={faPhone} />;
     const mail = <FontAwesomeIcon icon={faEnvelope} />;
     const location = <FontAwesomeIcon icon={faMapMarker} />;
@@ -64,4 +64,4 @@ function Contact() {
     )
 }
 
-export default Contact
+export default ContactForm
