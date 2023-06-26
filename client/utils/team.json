@@ -13,15 +13,5 @@
         "name":"John Doe 2",
         "role":"Web Developer",
         "image":"/teammember.jpg"
-    }, 
-    {
-        "name":"John Doe 3",
-        "role":"Graphics Designer",
-        "image":"/teammember.jpg"
-    }, 
-    {
-        "name":"John Doe 4",
-        "role":"Delivery Head",
-        "image":"/teammember.jpg"
     }
 ]

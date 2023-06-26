@@ -3,7 +3,9 @@ import Footer from '@/components/Footer'
 import Goals from '@/components/Goals'
 import Header from '@/components/Header'
 import OurStory from '@/components/OurStory'
+import Ratings from '@/components/Ratings'
 import Team from '@/components/Team'
+import Services from '@/components/WhyChooseUs'
 import { Poppins } from 'next/font/google'
 import React from 'react'
 const poppins = Poppins({ subsets: ['latin'], weight: '300' })
@@ -16,7 +18,9 @@ function AboutUs() {
                 <OurStory />
                 <Goals />
                 <Team />
+                <Services />
             </div>
+            <Ratings />
             <Footer />
         </div>
     )

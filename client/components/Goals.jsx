@@ -9,8 +9,8 @@ function Goals() {
             </div>
             <div className='lg:flex lg:space-y-0 space-y-10'>
                 <div
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
+                    // data-aos="fade-up"
+                    // data-aos-duration="2000"
                     className=' lg:px-10 px-2 text-center mx-auto lg:w-8/12'>
                     <h1 className="md:text-5xl text-3xl mb-5 font-semibold text-slate-700">Our <b className='text-bordercolor'>Mission</b></h1>
                     <p className=' lg:text-lg '>
@@ -18,8 +18,8 @@ function Goals() {
                     </p>
                 </div>
                 <div
-                    data-aos="fade-up"
-                    data-aos-duration="2000"
+                    // data-aos="fade-up"
+                    // data-aos-duration="2000"
                     className=' lg:px-10 px-2 lg:border-l-2 text-center mx-auto lg:w-8/12'>
                     <h1 className="md:text-5xl text-3xl mb-5 font-semibold text-slate-700">Our <b className='text-bordercolor'>Vision</b></h1>
                     <p className='lg:text-lg'>
