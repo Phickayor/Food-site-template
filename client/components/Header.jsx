@@ -19,7 +19,7 @@ function Header() {
         width === "w-0" ? setWidth("w-full md:w-1/2") : setWidth("w-0")
     }
     return (
-        <div className='sticky z-10 backdrop-blur-md bg-gradient-to-r from-[#651549]  via-bordercolor  to-[#961b0d] w-full top-0 font-semibold px-4 lg:px-10 py-3 text-white'>
+        <div className='sticky z-10 backdrop-blur-md bg-gradient-to-r from-[#651549]  via-bordercolor  to-[#961b0d] w-full top-0 font-semibold px-4 py-3 text-white'>
             <div className="lg:flex hidden justify-between px-4 lg:px-5">
                 <div className='inline-flex gap-x-2 font-bold text-xl items-center '>
                     {logo}
@@ -43,7 +43,7 @@ function Header() {
                 </div>
             </div>
             {/* For Mobile */}
-            <div className="flex lg:hidden justify-between px-5">
+            <div className="flex lg:hidden justify-between px-2">
                 <div className='inline-flex gap-x-2 font-semibold text-xl items-center '>
                     {bars}{logo}Abula.com
                 </div>
@@ -52,22 +52,24 @@ function Header() {
                     <h1 className='text-sm  bg-white text-bordercolor h-fit rounded-full px-1'>{itemNumber}</h1>
                 </Link>
             </div>
-            <div className={`absolute ${width} duration-[1.5s] bg-gradient-to-br from-[#651549] via-[#961b0d] to-bordercolor top-0 left-0  min-h-screen overflow-x-hidden overflow-y-auto`}>
-                <div className='flex justify-between gap-x-20 px-4 p-5 font-semibold text-xl items-center '>
+            <div className={`absolute z-30 ${width} duration-[1.5s] bg-gradient-to-br from-[#651549] via-[#961b0d] to-bordercolor top-0 left-0  h-screen py-5 overflow-x-hidden`}>
+                <div className='flex justify-between gap-x-20 px-4 font-semibold text-xl items-center '>
                     <h1 className='flex items-center gap-x-2'>{logo}Abula.com</h1>
                     <h1 onClick={ToogleNav} className=' flex cursor-pointer items-center mx-4 hover:scale-110 bg-black p-4 rounded-full text-2xl'>{close}</h1>
                 </div>
-                <ul className='flex flex-col space-y-20 px-10 my-14 self-center text-lg font-semibold'>
-                    <Link href='/' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{home} &nbsp;Home</li></Link>
-                    <Link href='/about-us' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{about} &nbsp;About Us</li></Link>
-                    <Link href='/menu' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{menu} &nbsp;Menu</li></Link>
-                    <Link href='/contact' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{contact} &nbsp; Contact Us</li></Link>
-                    <Link href="/faq" onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{faq} &nbsp; FAQ's</li></Link>
-                </ul>
-                <Link href='/order-online' className='flex flex-col mt-20'>
-                    <button className='font-semibold hover:bg-[#121212] duration-300 mx-auto bg-bordercolor hover:scale-105 px-5 py-3  rounded-lg text-white'>{shop} Order Online</button>
+                <div className='py-5'>
+                    <ul className='flex flex-col space-y-20 px-10 my-14 self-center text-lg font-semibold'>
+                        <Link href='/' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{home} &nbsp;Home</li></Link>
+                        <Link href='/about-us' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{about} &nbsp;About Us</li></Link>
+                        <Link href='/menu' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{menu} &nbsp;Menu</li></Link>
+                        <Link href='/contact' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{contact} &nbsp; Contact Us</li></Link>
+                        <Link href="/faq" onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{faq} &nbsp; FAQ's</li></Link>
+                    </ul>
+                    <Link href='/order-online' className='flex flex-col mt-20'>
+                        <button className='font-semibold hover:bg-[#121212] duration-300 mx-auto bg-bordercolor hover:scale-105 px-5 py-3  rounded-lg text-white'>{shop} Order Online</button>
 
-                </Link>
+                    </Link>
+                </div>
             </div>
         </div>
     )

@@ -18,6 +18,7 @@ function Deserts() {
                                     <div className='text-center'>
                                         <h1 className='text-xl font-semibold'>{food.name}</h1>
                                         <h1 className='text-lg'>{food.price}</h1>
+                                        <button className='font-semibold hover:bg-[#121212] duration-300 bg-bordercolor hover:scale-105 p-2 px-4 rounded-lg text-white'>Add to Cart</button>
                                     </div>
                                 </div>
                             )
