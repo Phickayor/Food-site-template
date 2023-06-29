@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { faBars, faClose, faContactCard, faHistory, faHome, faNewspaper, faQuestion, faScroll, faShoppingBag, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCartArrowDown, faCartShopping, faClose, faContactCard, faHistory, faHome, faNewspaper, faQuestion, faScroll, faShoppingBag, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
 import React, { useState } from 'react'
@@ -14,6 +14,7 @@ function Header() {
     const faq = <FontAwesomeIcon icon={faQuestion} />
     const shop = <FontAwesomeIcon icon={faShoppingBasket} />
     const [width, setWidth] = useState("w-0")
+    const [itemNumber, setItemNumber] = useState(12)
     function ToogleNav() {
         width === "w-0" ? setWidth("w-full md:w-1/2") : setWidth("w-0")
     }
@@ -31,15 +32,25 @@ function Header() {
                     <Link href='/contact' className='hover:border-b-4 border-[#651549] duration-100'><li>Contact Us</li></Link>
                     <Link href="/faq" className='hover:border-b-4 border-[#651549] duration-100'><li>FAQ's</li></Link>
                 </ul>
-                <a href='/order-online' className='self-center'>
-                    <button className='font-semibold hover:bg-[#121212] duration-300 self-center bg-bordercolor hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>{shop} Order Online</button>
-                </a>
+                <div className='flex gap-8'>
+                    <Link href='/order-online' className='self-center'>
+                        <button className='font-semibold hover:bg-[#121212] duration-300 self-center bg-bordercolor hover:scale-105 px-5 py-3 text-sm rounded-lg text-white'>{shop} Order Online</button>
+                    </Link>
+                    <Link href="/cart" className='flex'>
+                        <FontAwesomeIcon className='text-xl self-center hover:scale-125 duration-300' icon={faCartShopping} />
+                        <h1 className='text-sm  bg-white text-bordercolor h-fit rounded-full px-1'>{itemNumber}</h1>
+                    </Link>
+                </div>
             </div>
             {/* For Mobile */}
-            <div className="flex lg:hidden justify-between lg:px-5">
+            <div className="flex lg:hidden justify-between px-5">
                 <div className='inline-flex gap-x-2 font-semibold text-xl items-center '>
                     {bars}{logo}Abula.com
                 </div>
+                <Link href="/cart" className='flex gap-1'>
+                    <FontAwesomeIcon className='text-xl self-center hover:scale-125 duration-300' icon={faCartShopping} />
+                    <h1 className='text-sm  bg-white text-bordercolor h-fit rounded-full px-1'>{itemNumber}</h1>
+                </Link>
             </div>
             <div className={`absolute ${width} duration-[1.5s] bg-gradient-to-br from-[#651549] via-[#961b0d] to-bordercolor top-0 left-0  min-h-screen overflow-x-hidden overflow-y-auto`}>
                 <div className='flex justify-between gap-x-20 px-4 p-5 font-semibold text-xl items-center '>
@@ -55,6 +66,7 @@ function Header() {
                 </ul>
                 <Link href='/order-online' className='flex flex-col mt-20'>
                     <button className='font-semibold hover:bg-[#121212] duration-300 mx-auto bg-bordercolor hover:scale-105 px-5 py-3  rounded-lg text-white'>{shop} Order Online</button>
+
                 </Link>
             </div>
         </div>

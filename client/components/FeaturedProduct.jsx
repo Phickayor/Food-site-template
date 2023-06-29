@@ -34,7 +34,7 @@ function FeaturedProduct() {
             <div>
                 <div className='w-full'>
                     <p className='inline px-2 py-1 border-l-4 bg-slate-200 border-bordercolor'>Featured Products</p>
-                    <h1 className='text-3xl md:text-4xl font-rubik my-4 font-semibold'>Here are some of our <b className='text-bordercolor'>special delicacies</b> .</h1>
+                    <h1 className='text-3xl md:text-4xl my-4 font-semibold'>Here are some of our <span className='text-bordercolor'>special delicacies</span> .</h1>
                     {/* swiper */}
                     {(<Swiper
                         // install Swiper modules

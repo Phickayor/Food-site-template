@@ -5,7 +5,7 @@ function Appetizers() {
         <div className='space-y-8 mx-auto lg:w-11/12'>
             <div className='lg:mx-5 mx-2'>
                 <p className='w-fit my-2 px-2 py-1 border-l-4 bg-slate-200 border-bordercolor'>Appetizers</p>
-                <label className='text-3xl font-semibold'>Scrumptious <b className='text-bordercolor'>Appetizers</b></label>
+                <label className='text-3xl font-semibold'>Scrumptious <span className='text-bordercolor'>Appetizers</span></label>
             </div>
             <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 '>
                 {menu.map(
@@ -24,7 +24,7 @@ function Appetizers() {
                     }
                 )}
             </div>
-        </div>
+        </div >
     )
 }
 

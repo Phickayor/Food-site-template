@@ -33,7 +33,7 @@ function Menu() {
     return (
         <div>
             <p className='inline px-2 py-1 border-l-4 bg-slate-200 border-bordercolor'>Our Menu</p>
-            <h1 className='text-3xl md:text-4xl font-rubik my-4 font-semibold'>Take a sneak <b className='text-bordercolor'>peak </b>at our <b className='text-bordercolor'>menu</b> .</h1>
+            <h1 className='text-3xl md:text-4xl  my-4 font-semibold'>Take a sneak <span className='text-bordercolor'>peak </span>at our <span className='text-bordercolor'>menu</span> .</h1 >
             <div className='my-10 mx-auto lg:w-11/12 shadow-2xl shadow-black rounded-b-2xl'>
                 <div className='bg-bordercolor text-white flex justify-between p-4'>
                     <h1 className='font-semibold text-xl'>Our Menu</h1>
@@ -64,7 +64,7 @@ function Menu() {
                 </div>
             </div>
 
-        </div>
+        </div >
     )
 }
 

@@ -7,7 +7,7 @@ function Team() {
                 <div className='lg:flex justify-around'>
                     <div className='flex flex-col justify-center space-y-4'>
                         <p className=' px-2 w-fit py-1 border-l-4 bg-slate-200 border-bordercolor'>The Team</p>
-                        <h1 className='text-5xl  font-semibold'>Meet the <b className='text-bordercolor'>Team</b></h1>
+                        <h1 className='text-5xl  font-semibold'>Meet the <span className='text-bordercolor'>Team</span></h1>
                         <p className='text-lg leading-8'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, aliquam voluptatibus cupiditate sunt minus accusantium molestias.
                         </p>
                     </div>

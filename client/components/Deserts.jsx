@@ -6,7 +6,7 @@ function Deserts() {
         <div className='space-y-8 mx-auto lg:w-11/12'>
             <div className='lg:mx-5 mx-2'>
                 <p className='w-fit my-2 px-2 py-1 border-l-4 bg-slate-200 border-bordercolor'>Main Course</p>
-                <label className='text-3xl font-semibold'>Mouth Watering <b className='text-bordercolor'>Meals</b></label>
+                <label className='text-3xl font-semibold'>Mouth Watering <span className='text-bordercolor'>Meals</span></label>
             </div>
             <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 '>
                 {menu.map(
@@ -25,7 +25,7 @@ function Deserts() {
                     }
                 )}
             </div>
-        </div>
+        </div >
     )
 }
 
