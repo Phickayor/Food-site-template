@@ -1,6 +1,18 @@
 import React from 'react'
 import menu from '../utils/menu.json'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Appetizers() {
+    function HandleItem(e) {
+        if (e.target.innerHTML === 'Add to Cart') {
+            toast.success("One item added to Cart")
+            e.target.innerHTML = 'Added to Cart'
+        } else {
+            toast.error("One item removed from Cart")
+            e.target.innerHTML = 'Add to Cart'
+        }
+        e.target.classList.toggle('bg-green-500')
+    }
     return (
         <div className='space-y-8 mx-auto lg:w-11/12'>
             <div className='lg:mx-5 mx-2'>
@@ -17,13 +29,14 @@ function Appetizers() {
                                     <div className='text-center'>
                                         <h1 className='text-xl font-semibold'>{food.name}</h1>
                                         <h1 className='text-lg'>{food.price}</h1>
-                                        <button className='font-semibold hover:bg-[#121212] duration-300 bg-bordercolor hover:scale-105 p-2 px-4 rounded-lg text-white'>Add to Cart</button>
+                                        <button onClick={HandleItem} className='font-semibold hover:bg-[#121212] duration-300 bg-bordercolor hover:scale-105 p-2 px-4 rounded-lg text-white'>Add to Cart</button>
                                     </div>
                                 </div>
                             )
                         }
                     }
                 )}
+                <ToastContainer />
             </div>
         </div >
     )
