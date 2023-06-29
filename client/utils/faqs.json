@@ -1,0 +1,26 @@
+[
+    {
+      "question": "What are your opening hours?",
+      "answer": "We are open from 9:00 AM to 10:00 PM, Monday to Sunday."
+    },
+    {
+      "question": "Do you offer vegetarian options?",
+      "answer": "Yes, we have a variety of vegetarian dishes available on our menu."
+    },
+    {
+      "question": "Are you able to accommodate food allergies?",
+      "answer": "Absolutely! We strive to accommodate all dietary needs and can make adjustments to our dishes to accommodate food allergies. Please inform our staff about your allergies when placing your order."
+    },
+    {
+      "question": "Can I make a reservation?",
+      "answer": "Yes, we accept reservations. You can call us or use our online reservation system to book a table."
+    },
+    {
+      "question": "Do you offer catering services?",
+      "answer": "Yes, we provide catering services for events and special occasions. Please contact our catering department for more information."
+    },
+    {
+      "question": "What payment methods do you accept?",
+      "answer": "We accept cash, credit cards (Visa, Mastercard, and American Express), and mobile payment apps such as Apple Pay and Google Pay."
+    }
+  ]
