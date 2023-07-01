@@ -24,7 +24,7 @@ function Appetizers() {
                                         <h1 className='text-lg'>{food.price}</h1>
                                         <button
                                             onClick={(e) => {
-                                                var item = { name: food.name, price: food.price, image: food.image }
+                                                var item = { name: food.name, price: food.price, image: food.image, label: food.label, quantity: 0 }
                                                 var btn = e.target
                                                 btn.classList.toggle("bg-green-500")
                                                 btn.innerHTML === "Add to Cart" ?

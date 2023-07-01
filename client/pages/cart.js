@@ -1,13 +1,14 @@
+import { CartContext } from '@/Contexts/CartContext';
 import CartComponent from '@/components/Cart'
 import EmptyCart from '@/components/EmptyCart'
-import React from 'react'
+import React, { useContext } from 'react'
 function Cart() {
-    var cartItems = null
+    const { AddCartItem, RemoveCartItem, cart } = useContext(CartContext);
     return (
         <div className='mx-auto w-11/12'>
-            {cartItems ?
-                (<CartComponent />) :
+            {cart.length === 0 ?
                 (<EmptyCart />)
+                : (<CartComponent />)
             }
         </div>
     )
