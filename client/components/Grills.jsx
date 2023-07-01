@@ -1,25 +1,11 @@
 import React, { useContext } from 'react'
 import menu from '../utils/menu.json'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import {
     CartContext
 } from '@/Contexts/CartContext';
 function Grills() {
     const { AddCartItem, RemoveCartItem } = useContext(CartContext);
 
-    function HandleItem(e) {
-        if (e.target.innerHTML === 'Add to Cart') {
-            toast.success("One item added to Cart")
-            e.target.innerHTML = 'Added to Cart'
-            setItemNumber(itemNumber + 1)
-        } else {
-            toast.error("One item removed from Cart")
-            e.target.innerHTML = 'Add to Cart'
-            setItemNumber(itemNumber - 1)
-        }
-        e.target.classList.toggle('bg-green-500')
-    }
     return (
         <div className='space-y-8 mx-auto lg:w-11/12'>
             <div className='lg:mx-5 mx-2'>
@@ -43,12 +29,10 @@ function Grills() {
                                                 btn.classList.toggle("bg-green-500")
                                                 btn.innerHTML === "Add to Cart" ?
                                                     (btn.innerHTML = "Added to Cart",
-                                                        toast.success("One item added to Cart"),
                                                         AddCartItem(item)
                                                     )
                                                     :
                                                     (btn.innerHTML = "Add to Cart",
-                                                        toast.error("One item removed from cartItem"),
                                                         RemoveCartItem(item.name)
                                                     )
                                             }}
@@ -59,7 +43,6 @@ function Grills() {
                         }
                     }
                 )}
-                <ToastContainer />
             </div>
         </div >
     )

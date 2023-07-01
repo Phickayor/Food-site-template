@@ -1,7 +1,5 @@
 import React, { useContext } from 'react'
 import menu from '../utils/menu.json'
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import {
     CartContext
 } from '@/Contexts/CartContext';
@@ -31,12 +29,10 @@ function Appetizers() {
                                                 btn.classList.toggle("bg-green-500")
                                                 btn.innerHTML === "Add to Cart" ?
                                                     (btn.innerHTML = "Added to Cart",
-                                                        toast.success("One item added to Cart"),
                                                         AddCartItem(item)
                                                     )
                                                     :
                                                     (btn.innerHTML = "Add to Cart",
-                                                        toast.error("One item removed from cartItem"),
                                                         RemoveCartItem(item.name)
                                                     )
                                             }}
@@ -47,7 +43,6 @@ function Appetizers() {
                         }
                     }
                 )}
-                <ToastContainer />
             </div>
         </div >
     )
