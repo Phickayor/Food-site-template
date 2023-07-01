@@ -17,8 +17,7 @@ function Header() {
     const faq = <FontAwesomeIcon icon={faQuestion} />
     const shop = <FontAwesomeIcon icon={faShoppingBasket} />
     const [width, setWidth] = useState("w-0")
-    const { itemNumber } = useContext(CartContext
-    )
+    const { itemNumber } = useContext(CartContext)
     function ToogleNav() {
         width === "w-0" ? setWidth("w-full md:w-1/2") : setWidth("w-0")
     }
@@ -70,9 +69,8 @@ function Header() {
                         <Link href='/contact' onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{contact} &nbsp; Contact Us</li></Link>
                         <Link href="/faq" onClick={ToogleNav} className='hover:scale-110 duration-100'><li>{faq} &nbsp; FAQ's</li></Link>
                     </ul>
-                    <Link href='/order-online' className='flex flex-col mt-20'>
+                    <Link href='/order-online' onClick={ToogleNav} className='flex flex-col mt-20'>
                         <button className='font-semibold hover:bg-[#121212] duration-300 mx-auto bg-bordercolor hover:scale-105 px-5 py-3  rounded-lg text-white'>{shop} Order Online</button>
-
                     </Link>
                 </div>
             </div>

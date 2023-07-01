@@ -7,7 +7,7 @@ import Grills from './Grills'
 
 function ShoppingPage({ props }) {
     const [categoryprops, setcategoryprops] = useState("w-0")
-    const [categoryselected, setcategoryselected] = useState("Choose Category")
+    const [categoryselected, setcategoryselected] = useState("Desserts")
     const [content, setContent] = useState((<Deserts />))
     const close = <FontAwesomeIcon icon={faClose} className='cursor-pointer text-extralight' />
     const HandleCategory = ((e) => {
@@ -35,8 +35,8 @@ function ShoppingPage({ props }) {
                      rounded-full text-xl'>{close}</h1>
                 </div>
                 <ul className='flex lg:px-10 flex-col space-y-10 py-10 self-center whitespace-nowrap text-lg font-semibold'>
-                    <li onClick={() => HandleCategory('Appetizers')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>Appetizers</li>
                     <li onClick={() => HandleCategory('Desserts')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>Desserts</li>
+                    <li onClick={() => HandleCategory('Appetizers')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>Appetizers</li>
                     <li onClick={() => HandleCategory('Grills')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>Grills</li>
                 </ul>
             </div>

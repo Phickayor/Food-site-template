@@ -12,7 +12,7 @@ function Deserts() {
                 <p className='w-fit my-2 px-2 py-1 border-l-4 bg-slate-200 border-bordercolor'>Main Course</p>
                 <label className='text-3xl font-semibold'>Mouth Watering <span className='text-bordercolor'>Meals</span></label>
             </div>
-            <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 '>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 '>
                 {menu.map(
                     (food, index) => {
                         if (food.label === "Main Course") {

@@ -1,5 +1,6 @@
 import { faAngleDoubleRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Link from 'next/link'
 import React from 'react'
 
 function Hero() {
@@ -9,7 +10,7 @@ function Hero() {
             <div className='lg:w-1/2 flex space-y-5 flex-col justify-center'>
                 <label className='bg-white w-fit border-bordercolor px-2 border-l-4 block text-[#651549] font-semibold'>Foods and Drinks</label>
                 <h1 className='text-5xl leading-[60px]  xl:text-7xl font-semibold xl:leading-[75px]'>Hundreds of flavors <br />under one roof</h1>
-                <button className='w-fit my-4 hover:scale-110 duration-300 bg-gradient-to-r to-[#651549]  from-bordercolor p-4 mx-3 rounded-2xl font-extrabold'>Explore Menu &nbsp;{right}</button>
+                <Link href='/menu' className='w-fit my-4 hover:scale-110 duration-300 bg-gradient-to-r to-[#651549]  from-bordercolor p-4 mx-3 rounded-2xl font-extrabold'>Explore Menu &nbsp;{right}</Link>
             </div>
             <div className='hidden md:block w-1/2 self-center'>
                 <img

@@ -12,7 +12,7 @@ function Grills() {
                 <p className='w-fit my-2 px-2 py-1 border-l-4 bg-slate-200 border-bordercolor'>Grills</p>
                 <label className='text-3xl font-semibold'>Tantalizing <span className='text-bordercolor'>Grills</span></label>
             </div>
-            <div className='grid grid-cols-2 lg:grid-cols-4 gap-5 '>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 '>
                 {menu.map(
                     (food, index) => {
                         if (food.label === "Grills") {
