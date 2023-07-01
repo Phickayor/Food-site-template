@@ -15,7 +15,7 @@ function Footer() {
             <div className='col-span-2 py-5 lg:py-0 space-y-2 self-center order-3 lg:order-1'>
                 <div className="flex space-x-2 mx-4 self-center items-center border-2" >
                     <img src="/logo.png" className="h-16 lg:w-fit" />
-                    <h1 className="text-3xl font-bold self-center">Abula.com</h1>
+                    <h1 className="text-3xl font-bold self-center">Yummy</h1>
                 </div>
                 <div className='mx-auto w-11/12 space-y-3'>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa doloribus qui porro, officiis.</p>

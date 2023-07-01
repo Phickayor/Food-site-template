@@ -1,8 +1,11 @@
 import Image from 'next/image'
-import { faBars, faCartArrowDown, faCartShopping, faClose, faContactCard, faHistory, faHome, faNewspaper, faQuestion, faScroll, faShoppingBag, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCartShopping, faClose, faContactCard, faHistory, faHome, faNewspaper, faQuestion, faShoppingBasket } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import {
+    CartContext
+} from '@/Contexts/CartContext'
 function Header() {
     const logo = <img src='/logo.png' className='self-start h-12 lg:h-16' />
     const bars = <FontAwesomeIcon icon={faBars} onClick={ToogleNav} className='cursor-pointer text-extralight' />
@@ -14,16 +17,18 @@ function Header() {
     const faq = <FontAwesomeIcon icon={faQuestion} />
     const shop = <FontAwesomeIcon icon={faShoppingBasket} />
     const [width, setWidth] = useState("w-0")
-    const [itemNumber, setItemNumber] = useState(12)
+    const { itemNumber } = useContext(CartContext
+    )
     function ToogleNav() {
         width === "w-0" ? setWidth("w-full md:w-1/2") : setWidth("w-0")
     }
+
     return (
         <div className='sticky z-10 backdrop-blur-md bg-gradient-to-r from-[#651549]  via-bordercolor  to-[#961b0d] w-full top-0 font-semibold px-4 py-3 text-white'>
             <div className="lg:flex hidden justify-between px-4 lg:px-5">
                 <div className='inline-flex gap-x-2 font-bold text-xl items-center '>
                     {logo}
-                    Abula.com
+                    Yummy
                 </div>
                 <ul className='flex space-x-5 self-center text-md font-semibold'>
                     <Link href='/' className='hover:border-b-4 border-[#651549] duration-100'><li>Home</li></Link>
@@ -45,7 +50,7 @@ function Header() {
             {/* For Mobile */}
             <div className="flex lg:hidden justify-between px-2">
                 <div className='inline-flex gap-x-2 font-semibold text-xl items-center '>
-                    {bars}{logo}Abula.com
+                    {bars}{logo}Yummy
                 </div>
                 <Link href="/cart" className='flex gap-1'>
                     <FontAwesomeIcon className='text-xl self-center hover:scale-125 duration-300' icon={faCartShopping} />
@@ -54,7 +59,7 @@ function Header() {
             </div>
             <div className={`absolute z-30 ${width} duration-[1.5s] bg-gradient-to-br from-[#651549] via-[#961b0d] to-bordercolor top-0 left-0  h-screen py-5 overflow-x-hidden`}>
                 <div className='flex justify-between gap-x-20 px-4 font-semibold text-xl items-center '>
-                    <h1 className='flex items-center gap-x-2'>{logo}Abula.com</h1>
+                    <h1 className='flex items-center gap-x-2'>{logo}Yummy</h1>
                     <h1 onClick={ToogleNav} className=' flex cursor-pointer items-center mx-4 hover:scale-110 bg-black p-4 rounded-full text-2xl'>{close}</h1>
                 </div>
                 <div className='py-5'>

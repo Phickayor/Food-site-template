@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Deserts from './Deserts'
 import Grills from './Grills'
 
-function ShoppingPage() {
+function ShoppingPage({ props }) {
     const [categoryprops, setcategoryprops] = useState("w-0")
     const [categoryselected, setcategoryselected] = useState("Choose Category")
-    const [content, setContent] = useState((<><Deserts /><Appetizers /><Grills /></>))
+    const [content, setContent] = useState((<Deserts />))
     const close = <FontAwesomeIcon icon={faClose} className='cursor-pointer text-extralight' />
     const HandleCategory = ((e) => {
         categoryprops === "w-0" ? setcategoryprops("w-full p-8") : setcategoryprops("w-0");
@@ -16,8 +16,6 @@ function ShoppingPage() {
             setcategoryselected(e)
             if (e === "Appetizers") {
                 setContent(<Appetizers />)
-            } else if (e === "All") {
-                setContent(<><Deserts /><Appetizers /><Grills /></>)
             } else if (e === "Desserts") {
                 setContent(<Deserts />)
             }
@@ -27,6 +25,7 @@ function ShoppingPage() {
         }
         else { console.log("not string"); }
     })
+
     return (
         <div className='flex justify-between w-full'>
             <div className={`absolute ${categoryprops} duration-300 overflow-x-hidden lg:w-fit bg-slate-50 lg:bg-inherit lg:relative lg:p-10  `}>
@@ -36,7 +35,6 @@ function ShoppingPage() {
                      rounded-full text-xl'>{close}</h1>
                 </div>
                 <ul className='flex lg:px-10 flex-col space-y-10 py-10 self-center whitespace-nowrap text-lg font-semibold'>
-                    <li onClick={() => HandleCategory('All')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>All</li>
                     <li onClick={() => HandleCategory('Appetizers')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>Appetizers</li>
                     <li onClick={() => HandleCategory('Desserts')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>Desserts</li>
                     <li onClick={() => HandleCategory('Grills')} className='cursor-pointer lg:hover:scale-110 hover:list-disc duration-100'>Grills</li>
