@@ -9,24 +9,21 @@ import { Poppins } from 'next/font/google'
 const poppins = Poppins({ subsets: ['latin'], weight: '300' })
 export default function App({ Component, pageProps }) {
   const [itemNumber, setItemNumber] = useState(0)
-  var cart = []
+  var [cart, setCart] = useState([])
   const AddCartItem = (item) => {
-    cart.push(item)
+    setCart([...cart, item])
     setItemNumber(itemNumber + 1)
-    console.log(cart)
   }
-  const RemoveCartItem = (item) => {
-    alert("Removed from cart")
+  const RemoveCartItem = (itemName) => {
+    setCart(cart.filter((item) => item.name !== itemName));
     setItemNumber(itemNumber - 1)
   }
   return (
     <div className={poppins.className}>
-      <CartContext
-        .Provider value={{ itemNumber, AddCartItem, RemoveCartItem }}>
+      <CartContext.Provider value={{ itemNumber, AddCartItem, RemoveCartItem }}>
         <Header />
         <Component {...pageProps} />
         <Footer />
-      </CartContext
-        .Provider>
+      </CartContext.Provider>
     </div>)
 }

@@ -6,8 +6,7 @@ import {
     CartContext
 } from '@/Contexts/CartContext';
 function Grills() {
-    const { AddCartItem, RemoveCartItem } = useContext(CartContext
-    );
+    const { AddCartItem, RemoveCartItem } = useContext(CartContext);
 
     function HandleItem(e) {
         if (e.target.innerHTML === 'Add to Cart') {
@@ -50,7 +49,7 @@ function Grills() {
                                                     :
                                                     (btn.innerHTML = "Add to Cart",
                                                         toast.error("One item removed from cartItem"),
-                                                        RemoveCartItem(item)
+                                                        RemoveCartItem(item.name)
                                                     )
                                             }}
                                             className='font-semibold hover:bg-[#121212] duration-300 bg-bordercolor hover:scale-105 p-2 px-4 rounded-lg text-white'>Add to Cart</button>

@@ -6,8 +6,7 @@ import {
     CartContext
 } from '@/Contexts/CartContext';
 function Deserts() {
-    const { AddCartItem, RemoveCartItem } = useContext(CartContext
-    );
+    const { AddCartItem, RemoveCartItem } = useContext(CartContext);
     return (
         <div className='space-y-8 mx-auto lg:w-11/12'>
             <div className='lg:mx-5 mx-2'>
@@ -37,7 +36,7 @@ function Deserts() {
                                                     :
                                                     (btn.innerHTML = "Add to Cart",
                                                         toast.error("One item removed from cartItem"),
-                                                        RemoveCartItem(item)
+                                                        RemoveCartItem(item.name)
                                                     )
                                             }}
                                             className='font-semibold hover:bg-[#121212] duration-300 bg-bordercolor hover:scale-105 p-2 px-4 rounded-lg text-white'>Add to Cart</button>
