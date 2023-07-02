@@ -1,7 +1,7 @@
 import { CartContext } from '@/Contexts/CartContext';
 import CartComponent from '@/components/Cart'
 import EmptyCart from '@/components/EmptyCart'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 function Cart() {
     const { cart } = useContext(CartContext);
     return (

@@ -2,49 +2,65 @@
     {
         "name":"Chicken And Chips",
         "label":"Appetizers",
-        "price":"₦ 2500",
-    "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+         "quantity":1,
+        "amount":"2500"
     },
     {
         "name":"Jollof rice",
         "label":"Main Course",
-        "price":"₦ 2500",
-        "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+        "quantity":1,
+        "amount":"2500"
     },
     {
         "name":"Abula and Egusi Soup",
         "label":"Main Course",
-        "price":"₦ 2500",
-        "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+        "quantity":1,
+        "amount":"2500"
     },
     {
         "name":"Small Chops",
         "label":"Appetizers",
-        "price":"₦ 2500",
-        "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+        "quantity":1,
+        "amount":"2500"
     },
     {
         "name":"Sharwama",
         "label":"Grills",
-        "price":"₦ 2500",
-    "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+        "quantity":1,
+        "amount":"2500"
     },
     {
         "name":"Fried rice",
         "label":"Main Course",
-        "price":"₦ 2500",
-        "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+        "quantity":1,
+        "amount":"2500"
     },
     {
         "name":"Peppered Fish",
         "label":"Grills",
-        "price":"₦ 2500",
-        "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+        "quantity":1,
+        "amount":"2500"
     },
     {
         "name":"Spaghetti",
         "label":"Main Course",
-        "price":"₦ 2500",
-        "image":"/test.jpeg"
+        "price":"2500",
+        "image":"/test.jpeg",
+        "quantity":1,
+        "amount":"2500"
     }
 ]

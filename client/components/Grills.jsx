@@ -21,10 +21,10 @@ function Grills() {
                                     <img src={food.image} className='mx-auto rounded-2xl w-3/4' />
                                     <div className='text-center'>
                                         <h1 className='text-xl font-semibold'>{food.name}</h1>
-                                        <h1 className='text-lg'>{food.price}</h1>
+                                        <h1 className='text-lg'>₦ {food.price}</h1>
                                         <button
                                             onClick={(e) => {
-                                                var item = { name: food.name, price: food.price, image: food.image, label: food.label, quantity: 0 }
+                                                var item = { name: food.name, price: food.price, image: food.image, label: food.label, quantity: food.quantity, amount: food.amount }
                                                 var btn = e.target
                                                 btn.classList.toggle("bg-green-500")
                                                 btn.innerHTML === "Add to Cart" ?

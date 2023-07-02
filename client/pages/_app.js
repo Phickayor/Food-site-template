@@ -15,22 +15,38 @@ export default function App({ Component, pageProps }) {
   var [cart, setCart] = useState([])
   const AddCartItem = (item) => {
     if (cart.find(obj => obj.name === item.name) !== undefined) {
-      toast.warning("This product is already in your cart")
+      toast.warning("This product is already in your cart");
     }
     else {
-      setCart([...cart, item])
-      setItemNumber(itemNumber + 1)
-      toast.success("One item added to Cart")
+      setCart([...cart, item]);
+      setItemNumber(itemNumber + 1);
+      toast.success("One item added to Cart");
     }
   }
   const RemoveCartItem = (itemName) => {
     setCart(cart.filter((item) => item.name !== itemName));
-    setItemNumber(itemNumber - 1)
-    toast.error("One item removed from cartItem")
+    setItemNumber(itemNumber - 1);
+    toast.error("One item removed from Cart");
+  }
+  const IncreaseQuantity = (itemName) => {
+    cart.find((item) => {
+      if (item.name === itemName) {
+        item.quantity++;
+        item.amount = item.quantity * item.price;
+      }
+    })
+  }
+  const DecreaseQuantity = (itemName) => {
+    cart.find((item) => {
+      if (item.name === itemName && item.quantity > 1) {
+        item.quantity--;
+        item.amount = item.quantity * item.price;
+      }
+    })
   }
   return (
     <div className={poppins.className}>
-      <CartContext.Provider value={{ itemNumber, AddCartItem, RemoveCartItem, cart }}>
+      <CartContext.Provider value={{ itemNumber, AddCartItem, RemoveCartItem, cart, IncreaseQuantity, DecreaseQuantity }}>
         <Header />
         <Component {...pageProps} />
         <Footer />
